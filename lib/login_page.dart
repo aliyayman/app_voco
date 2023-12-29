@@ -68,5 +68,3 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 }
-
-void loginUser(String text, String text2, BuildContext context) {}
