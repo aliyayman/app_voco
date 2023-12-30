@@ -4,8 +4,8 @@ import 'package:app_voco/product/utility/constants/constant_string.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-class LoginCotroller {
 
+class LoginCotroller {
   Future<void> loginUser(String username, String password, context) async {
     final response = await http.post(
       Uri.parse('https://reqres.in/api/login'),
@@ -14,10 +14,11 @@ class LoginCotroller {
 
     if (response.statusCode == 200) {
       final token = json.decode(response.body)['token'];
-    
+
       SharedPreferences prefs = await SharedPreferences.getInstance();
       prefs.setString('token', token);
-    
+      prefs.setBool('isLogin', true);
+
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => UsersPage()),
@@ -30,6 +31,4 @@ class LoginCotroller {
       );
     }
   }
-
-
 }

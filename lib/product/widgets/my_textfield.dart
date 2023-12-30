@@ -1,4 +1,4 @@
-import 'package:app_voco/product/utility/constants/constant_string.dart';
+
 import 'package:flutter/material.dart';
 
 class myTextField extends StatelessWidget {
@@ -23,7 +23,7 @@ class myTextField extends StatelessWidget {
       controller: _usernameController,
       decoration:  InputDecoration(
           labelText: _labelText,
-          border: OutlineInputBorder(
+          border: const OutlineInputBorder(
               borderSide: BorderSide(),
               borderRadius: BorderRadius.all(Radius.circular(24)))),
       validator: (value) {
