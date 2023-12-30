@@ -1,4 +1,4 @@
-import 'package:app_voco/login_page.dart';
+import 'package:app_voco/pages/login/login_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {

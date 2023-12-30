@@ -1,3 +1,4 @@
+import 'package:app_voco/pages/login/controller.dart';
 import 'package:app_voco/utility/constants/constant_padding.dart';
 import 'package:app_voco/utility/constants/constant_string.dart';
 import 'package:flutter/material.dart';
@@ -58,7 +59,12 @@ class _LoginPageState extends State<LoginPage> {
               ),
               const SizedBox(height: 16.0),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  if (_formKey.currentState!.validate()) {
+                    LoginCotroller().loginUser(_usernameController.text,
+                        _passwordController.text, context);
+                  }
+                },
                 child: const Text(ConstantString.buttonText),
               ),
             ],
