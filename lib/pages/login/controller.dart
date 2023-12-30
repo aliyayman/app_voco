@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:app_voco/pages/user_view/user_page.dart';
-import 'package:app_voco/utility/constants/constant_string.dart';
+import 'package:app_voco/product/utility/constants/constant_string.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -20,7 +20,7 @@ class LoginCotroller {
     
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => UserPage()),
+        MaterialPageRoute(builder: (context) => UsersPage()),
       );
     } else {
       ScaffoldMessenger.of(context).showSnackBar(

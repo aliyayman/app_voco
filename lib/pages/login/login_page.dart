@@ -1,6 +1,7 @@
 import 'package:app_voco/pages/login/controller.dart';
-import 'package:app_voco/utility/constants/constant_padding.dart';
-import 'package:app_voco/utility/constants/constant_string.dart';
+import 'package:app_voco/product/utility/constants/constant_padding.dart';
+import 'package:app_voco/product/utility/constants/constant_string.dart';
+import 'package:app_voco/product/widgets/my_textfield.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
@@ -27,36 +28,9 @@ class _LoginPageState extends State<LoginPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(ConstantString.textTitle),
-              TextFormField(
-                controller: _usernameController,
-                decoration: const InputDecoration(
-                    labelText: ConstantString.userName,
-                    border: OutlineInputBorder(
-                        borderSide: BorderSide(),
-                        borderRadius: BorderRadius.all(Radius.circular(24)))),
-                validator: (value) {
-                  if (value!.isEmpty) {
-                    return ConstantString.validatorUserMessage;
-                  }
-                  return null;
-                },
-              ),
+              myTextField(usernameController: _usernameController,snackBarMessage: ConstantString.validatorUserMessage,labelText: ConstantString.userName  ),
               const SizedBox(height: 16.0),
-              TextFormField(
-                controller: _passwordController,
-                obscureText: true,
-                decoration: const InputDecoration(
-                    labelText: ConstantString.password,
-                    border: OutlineInputBorder(
-                        borderSide: BorderSide(),
-                        borderRadius: BorderRadius.all(Radius.circular(24)))),
-                validator: (value) {
-                  if (value!.isEmpty) {
-                    return ConstantString.snackbarMessage;
-                  }
-                  return null;
-                },
-              ),
+              myTextField(usernameController: _passwordController,snackBarMessage: ConstantString.snackbarMessage, labelText: ConstantString.password ),
               const SizedBox(height: 16.0),
               ElevatedButton(
                 onPressed: () {
@@ -74,3 +48,5 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 }
+
+
