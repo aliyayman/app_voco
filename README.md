@@ -1,19 +1,4 @@
-# app_voco
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
 
 
 <!DOCTYPE html>
@@ -27,7 +12,6 @@ samples, guidance on mobile development, and a full API reference.
   <div class="container">
     <h2>Kısa Açıklama</h2>
     <p>Bu uygulama, kullanıcıların günlük aktivitelerini takip etmelerine ve hedeflerine ulaşmalarına yardımcı olur.</p>
-
     <h2>📚 Özellikler</h2>
     <ul>
       <li>Kullanıcı dostu arayüz</li>
@@ -35,12 +19,10 @@ samples, guidance on mobile development, and a full API reference.
       <li>Veri senkronizasyonu</li>
       <li>Offline mod desteği</li>
     </ul>
-
     <h2>📸 Ekran Görüntüleri</h2>
     <p>Aşağıda uygulamamızın ekran görüntüleri bulunmaktadır:</p>
     <img src="screenshots/home.png" alt="Ana Ekran">
     <img src="screenshots/profile.png" alt="Profil Sayfası">
-
     <h2>⚙️ Gereksinimler</h2>
     <p>Uygulamayı çalıştırmak için aşağıdaki gereksinimlere ihtiyacınız var:</p>
     <ul>
@@ -48,7 +30,6 @@ samples, guidance on mobile development, and a full API reference.
       <li>Android 8.0 veya üzeri</li>
       <li>Flutter SDK 3.x.x</li>
     </ul>
-
     <h2>🚀 Kurulum</h2>
     <p>Uygulamanın geliştirme ortamında kurulumu için:</p>
     <pre>
@@ -57,14 +38,12 @@ cd proje-adi
 flutter pub get
 flutter run
     </pre>
-
     <h2>🌐 API Entegrasyonu</h2>
     <p>API anahtarlarını almak için <a href="https://api-provider.com" target="_blank">API Sağlayıcı</a>'ya gidin.</p>
     <pre>
 API_KEY=your_api_key
 BASE_URL=https://api.example.com
     </pre>
-
     <h2>🤝 Katkıda Bulunma</h2>
     <p>Katkıda bulunmak için:</p>
     <ol>
@@ -72,7 +51,6 @@ BASE_URL=https://api.example.com
       <li>Yeni bir özellik veya hata düzeltmesi üzerinde çalışın</li>
       <li>Pull Request gönderin</li>
     </ol>
-
     <h2>📄 Lisans</h2>
     <p>Bu proje <a href="LICENSE" target="_blank">MIT Lisansı</a> altında lisanslanmıştır.</p>
   </div>
