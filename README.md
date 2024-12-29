@@ -21,56 +21,6 @@ samples, guidance on mobile development, and a full API reference.
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mobil Uygulama README</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f9;
-      color: #333;
-    }
-    header {
-      background: #0073e6;
-      color: white;
-      padding: 1rem 0;
-      text-align: center;
-    }
-    .container {
-      max-width: 800px;
-      margin: 2rem auto;
-      background: white;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    h1, h2, h3 {
-      color: #0073e6;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-    code {
-      background: #f4f4f9;
-      padding: 0.2rem 0.5rem;
-      border-radius: 4px;
-      color: #0073e6;
-    }
-    pre {
-      background: #f4f4f9;
-      padding: 1rem;
-      border-radius: 8px;
-      overflow-x: auto;
-    }
-  </style>
-</head>
-<body>
   <header>
     <h1>📱 Mobil Uygulama Adı</h1>
   </header>
